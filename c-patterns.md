@@ -1,3 +1,8 @@
+---
+layout: page
+title: "ProgramoDev"
+permalink: /c-patterns
+---
 # C Patterns
 
 Here I’ll keep all my commonly asked C questions and patterns.
