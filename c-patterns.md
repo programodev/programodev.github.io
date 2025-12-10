@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "ProgramoDev"
+layout: default
+title: "C Patterns"
 permalink: /c-patterns
 ---
 # C Patterns
