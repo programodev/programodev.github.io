@@ -3,6 +3,7 @@ layout: default
 title: "C Patterns"
 permalink: /c-patterns
 ---
+{% include header.html %}
 # C Patterns
 
 Here I’ll keep all my commonly asked C questions and patterns.
