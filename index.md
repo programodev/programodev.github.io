@@ -2,4 +2,4 @@
 
 This is a coding patterns and tutorials website.
 
--[C patterns](/c-patterns/)
+-[C patterns](/c-patterns)
