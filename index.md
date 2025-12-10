@@ -1,4 +1,9 @@
+---
+layout: page
+title: "ProgramoDev"
+permalink: /
+---
+
 # Welcome to ProgramoDev
 
-This site is built using GitHub Pages with the Cayman theme.
-More content coming soon!
+This is a coding patterns and tutorials website.
