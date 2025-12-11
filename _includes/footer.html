@@ -1,0 +1,39 @@
+<!-- _includes/footer.html — Overridden for Cayman theme -->
+<footer class="site-footer">
+  <div class="wrapper">
+    {%- if site.footer %}
+      {{ site.footer | escape }}
+    {%- else %}
+      {%- if site.author %}
+        &copy; {{ site.time | date: '%Y' }} {{ site.author | escape }}.{% endif %}
+    {%- endif %}
+  </div>
+</footer>
+
+<!-- ADD YOUR CUSTOM FOOTER HERE — this will appear right after the default (or replace it if you delete the above) -->
+<footer class="custom-footer" style="padding: 2rem 0; text-align: center; border-top: 1px solid #e5e7eb; background-color: #f9fafb; margin-top: 2rem;">
+  <div class="wrapper" style="max-width: 980px; margin: 0 auto; padding: 0 1rem;">
+    <p>© {{ 'now' | date: '%Y' }} Your Name. All rights reserved.</p>
+    <p style="color: #6b7280; margin-top: 0.5rem;">Made with ❤️, caffeine, and zero tolerance for Jekyll BS.</p>
+    <!-- Add links/icons here, e.g.: -->
+    <!-- <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 1rem; margin: 1rem 0 0;">
+      <li><a href="https://github.com/yourusername">GitHub</a></li>
+      <li><a href="mailto:you@example.com">Email</a></li>
+    </ul> -->
+  </div>
+</footer>
+
+<style>
+  /* Custom styles for your footer (Cayman-compatible) */
+  .custom-footer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .custom-footer {
+      background-color: #1a1a1a;
+      border-top-color: #333;
+      color: #f3f4f6;
+    }
+    .custom-footer p:nth-child(2) { color: #9ca3af; }
+  }
+</style>
