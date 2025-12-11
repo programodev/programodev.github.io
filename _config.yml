@@ -4,8 +4,5 @@ plugins:
 favicon: /favicon.ico
 include:
   - footer.html
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: custom
+layout:
+  - default.html
