@@ -1,3 +1,6 @@
+---
+title: "Print first ten natural numbers"
+---
 Print first ten natural numbers
 ```python
 for i in range(1,11):
