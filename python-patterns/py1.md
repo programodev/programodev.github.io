@@ -6,8 +6,8 @@ Method 1: Using **for** loop
 ```python
 for i in range(1,11):
   print(i)
-```<br>
-Output:
+```
+<br>Output:
 ```python
 1
 2
@@ -41,15 +41,16 @@ while i <= 10:
 8
 9
 10
-```<br>
-Explanation:<br><br>
+```
+<br>Explanation:<br><br>
 Method 3: Using **range**
 ```python
 print(*range(1, 11))
 ```
-<br>
-Output:
+<br>Output:
+```python
 1 2 3 4 5 6 7 8 9 10
+```
 <br>Explanation:
 <br><br>
 Method 4: Using recursion
@@ -60,8 +61,8 @@ def show(n):
     print(n)
     show(n + 1)
 show(1)
-```<br>
-Output:
+```
+<br>Output:
 ```python
 1
 2
@@ -73,4 +74,5 @@ Output:
 8
 9
 10
-```<br>Explanation:
+```
+<br>Explanation:
