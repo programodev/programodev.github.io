@@ -1,8 +1,15 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <p style="margin: 0; text-align: center; font-size: 0.9rem;">
-      © {{ site.time | date: '%Y' }} ProgramoDev · 
-      Made with ❤️ and a lot of coffee
-    </p>
+    <div class="site-footer-owner">
+      <ul class="owner">
+        <li class="owner__name">© {{ 'now' | date: '%Y' }} ProgramoDev</li>
+        <li class="owner__url"><a href="https://github.com/programodev">github.com/programodev</a></li>
+      </ul>
+    </div>
+    <div class="site-footer-credits">
+      <ul class="credits">
+        <li>Made with ❤️ and a lot of coffee</li>
+      </ul>
+    </div>
   </div>
 </footer>
