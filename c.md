@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "C Patterns"
-permalink: /c-patterns
+permalink: /c
 ---
 # C Patterns
 
