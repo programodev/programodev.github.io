@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Python Patterns"
-permalink: /python-patterns
+permalink: /py
 ---
 # Python Patterns
 
