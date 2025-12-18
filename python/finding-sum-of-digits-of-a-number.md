@@ -1,5 +1,5 @@
 ---
-title: "Finding the sum of digits of an input number"
+title: "Finding sum of digits of a number"
 ---
 Find the sum of digits of an input number<br>
 Method 1: Using **for** loop
