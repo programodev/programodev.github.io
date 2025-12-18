@@ -1,17 +1,6 @@
 .contact-form {
-  max-width: 520px;
   margin: 40px auto;
   padding: 24px;
-  background: #ffffff;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  font-family: inherit;
-}
-
-.contact-form h2 {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #157878; /* Cayman theme color */
 }
 
 .contact-form label {
