@@ -1,5 +1,5 @@
 ---
-title: Find the reverse of a number.
+title: "Find the reverse of a number"
 ---
 ```python
 x=int(input("Enter number: "))
