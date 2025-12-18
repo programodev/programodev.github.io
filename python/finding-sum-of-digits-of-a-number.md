@@ -74,3 +74,4 @@ Enter number: 987
 Sum of digits: 24
 ```
 <br>Explanation:
+<a href="#top" class="back-to-top">↑</a>
