@@ -14,3 +14,4 @@ Output:
 Enter a number: 20
 20 is even
 ```
+Explanation:
