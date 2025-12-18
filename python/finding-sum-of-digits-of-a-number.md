@@ -10,13 +10,12 @@ for digit in x:
     sum=sum+int(digit)
 print(sum)
 ```
-<br>Output:
-```python
+Output:
+```
 Enter number: 1254
 Sum of digit of number is 12
 ```
-<br>
-Explanation:<br><br>
+Explanation:<br><br><br>
 Method 2: Using a **while** loop
 ```python
 x=int(input("Enter number: "))
@@ -26,26 +25,24 @@ while x>0:
     x=x//10
 print(f"Sum of digits: {s}")
 ```
-<br>Output:
-```python
+Output:
+```
 Enter number: 1234
 Sum of digits: 10
 ```
-<br>Explanation:<br><br>
+Explanation:<br><br><br>
 Method 3: Using **sum()** with list comprehension
 ```python
 x = input("Enter number: ")
 s = sum([int(d) for d in x])
 print(f"Sum of digits: {s}")
 ```
-<br>
 Output
-```python
+```
 Enter number: 999
 Sum of digits: 27
 ```
-<br>
-Explanation:<br><br>
+Explanation:<br><br><br>
 Method 4: Using recursion
 ```python
 def digit_sum(n):
@@ -55,22 +52,21 @@ def digit_sum(n):
 x = int(input("Enter number: "))
 print(f"Sum of digits: {digit_sum(x)}")
 ```
-<br>Output:
-```python
+Output:
+```
 Enter number: 254
 Sum of digits: 11
 ```
-<br>Explanation:<br><br>
+Explanation:<br><br><br>
 Method 5: Using **map()**
 ```python
 x=input("Enter number: ")
 s=sum(map(int, x))
 print(f"Sum of digits: {s}")
 ```
-<br>
 Output:
-```python
+```
 Enter number: 987
 Sum of digits: 24
 ```
-<br>Explanation:
+Explanation:
