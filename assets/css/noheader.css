@@ -17,6 +17,7 @@
   color: #6b7280;
   font-size: 1rem;
 }
+@media (max-width: 768px) {
 .simple-header h1 {
   font-size: clamp(3.5rem, 8vw, 6rem);
 }
@@ -27,3 +28,4 @@
 }
 
 
+}
