@@ -17,15 +17,23 @@
   color: #6b7280;
   font-size: 1rem;
 }
+/* Small screen fixes */
 @media (max-width: 768px) {
-.simple-header h1 {
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  
+  /* Title */
+  .simple-header h1 {
+    font-size: 4rem;  /* smaller than desktop 6rem, but still big */
+  }
+
+  /* Paragraphs */
+  .simple-header p,
+  .main-content p {
+    font-size: 2rem;  /* smaller than 2.6rem desktop, readable on mobile */
+  }
+
+  /* Code blocks */
+  pre {
+    font-size: 2rem;  /* increases code font on small screens */
+  }
 }
 
-.simple-header p,
-.main-content {
-  font-size: clamp(1.5rem, 5vw, 2.6rem);
-}
-
-
-}
