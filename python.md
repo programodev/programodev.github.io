@@ -3,8 +3,6 @@ layout: no-header
 title: "Python"
 permalink: /python
 ---
-# Python Patterns
-
 This section contains Python programming examples designeed to help learners understand programming logic through clear and practical code. Each example focuses on a specific concept and is written in a simple, beginner friendly way to make learning easier.
 
 • [Print numbers from 1 to n](/python/print-numbers-1-to-n)\
