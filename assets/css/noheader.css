@@ -17,3 +17,13 @@
   color: #6b7280;
   font-size: 1rem;
 }
+.simple-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+}
+
+.simple-header p,
+.main-content {
+  font-size: clamp(1rem, 2.5vw, 1.05rem);
+}
+
+
