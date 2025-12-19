@@ -1,5 +1,6 @@
 ---
 title: "Find the reverse of a number"
+layout: no-header
 ---
 ```python
 x=int(input("Enter number: "))
