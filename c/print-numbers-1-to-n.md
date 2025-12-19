@@ -1,3 +1,7 @@
+---
+layout: no-header
+title: "Print numbers from 1 to n"
+---
 Print numbers from 1 to 10 using **for** loop:
 ```c
 #include <stdio.h>
