@@ -1,0 +1,19 @@
+.simple-header {
+  margin-bottom: 2.5rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 4px solid #159957;
+  background: #f8fafc;
+}
+
+.simple-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #159957; /* Cayman green */
+}
+
+.simple-header p {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
