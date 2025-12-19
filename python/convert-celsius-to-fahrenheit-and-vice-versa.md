@@ -1,6 +1,6 @@
 ---
 title: "Convert Celcius to Fahrenheit and vice versa"
-title: Convert Celcius to Fahrenheit and vice versa
+layout: no-header
 ---
 ```python
 z=int(input("Enter 1 for C to F else 2 for F to C: "))
