@@ -1,3 +1,7 @@
+---
+layout: no-header
+title: "About Me"
+---
 <p>Welcome to this coding-focused website, created to make programming simple and beginner-friendly. The goal of this platform is to help learners understand coding concepts without confusion, using clear explanations, easy examples, and practical problem sets.</p>
 <p>Programming can feel overwhelming at first — too many concepts, too much information, and not enough simple guidance. This website solves that problem by explaining everything in a straightforward way. From basic loops and conditionals to patterns, arrays, and logic-building exercises, each topic is written to help you learn step-by-step. Here, you’ll find:
 <br>
