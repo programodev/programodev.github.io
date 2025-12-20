@@ -1,6 +1,7 @@
 ---
 title: "Find whether a number is even"
 layout: no-header
+back_link: /python
 ---
 Method 1:
 ```python
