@@ -1,0 +1,37 @@
+---
+---
+/* 
+====================================================
+Sticky bottom bar CSS
+- Works for Cayman theme
+- No font changes, only styling the bottom bar
+====================================================
+*/
+
+.element {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  display: flex;
+  overflow-x: auto;
+  z-index: 999;
+}
+
+.element__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.element__link:hover {
+  cursor: pointer;
+}
