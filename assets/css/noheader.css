@@ -22,16 +22,16 @@
 @media (max-width: 768px) {
   
   .simple-header h1 {
-    font-size: 4rem;  /* smaller than desktop 6rem, but still big */
+    font-size: 4rem; 
   }
 
   .simple-header p,
   .main-content p {
-    font-size: 2rem;  /* smaller than 2.6rem desktop, readable on mobile */
+    font-size: 2rem; 
   }
 
   pre {
-    font-size: 2rem;  /* increases code font on small screens */
+    font-size: 2rem;
   }
 }
 
