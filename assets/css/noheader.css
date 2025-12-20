@@ -18,6 +18,7 @@
   font-size: 1rem;
 }
 /* Small screen fixes */
+/*
 @media (max-width: 768px) {
   
   /* Title */
@@ -37,3 +38,21 @@
   }
 }
 
+*/
+
+@media (max-width: 768px) {
+    /* Increase font size for paragraphs */
+    p {
+        font-size: 1.2rem;  /* Adjust this value to your liking */
+    }
+
+    /* Increase font size for code blocks */
+    pre, code {
+        font-size: 1.1rem;  /* Adjust this too */
+    }
+
+    /* Optional: if you want to adjust headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.3rem;  /* Adjust to make headings larger on mobile */
+    }
+}
