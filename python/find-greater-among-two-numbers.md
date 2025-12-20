@@ -1,6 +1,7 @@
 ---
 title: "Find greater among two numbers"
 layout: no-header
+back_link: /python
 ---
 Method 1: Using **if else**
 ```python
