@@ -26,8 +26,8 @@ Target screens 768px wide or smaller (phones & small tablets)
   We keep paragraph text readable
   without making it look oversized.
   */
-  p {
-    font-size: 1.8rem;
+  .main-content p {
+    font-size: 1.05rem;
     line-height: 1.7;
   }
 
@@ -38,8 +38,8 @@ Target screens 768px wide or smaller (phones & small tablets)
   Monospace fonts look smaller,
   so we match paragraph size.
   */
-  code {
-    font-size: 1.7rem;
+  .main-content code {
+    font-size: 1.05rem;
   }
 
   /*
@@ -50,13 +50,12 @@ Target screens 768px wide or smaller (phones & small tablets)
   We increase size so code and
   paragraph text look visually equal.
   */
-  pre,
-  pre code,
-  .highlight pre {
-    font-size: 1.7rem;
+  .main-content pre,
+  .main-content pre code,
+  .main-content .highlight pre {
+    font-size: 1.05rem;
     line-height: 1.6;
   }
-}
 
 /*
 ====================================================
