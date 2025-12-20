@@ -1,12 +1,4 @@
----
----
-/* 
-====================================================
-Sticky bottom bar CSS
-- Works for Cayman theme
-- No font changes, only styling the bottom bar
-====================================================
-*/
+
 
 .element {
   position: fixed;
