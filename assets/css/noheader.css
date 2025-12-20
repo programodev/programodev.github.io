@@ -40,16 +40,16 @@
 @media (max-width: 768px) {
     /* Increase font size for paragraphs */
     p {
-        font-size: 1.2rem;  /* Adjust this value to your liking */
+        font-size: 1.8rem;  /* Adjust this value to your liking */
     }
 
     /* Increase font size for code blocks */
     pre, code {
-        font-size: 1.1rem;  /* Adjust this too */
+        font-size: 1.8rem;  /* Adjust this too */
     }
 
     /* Optional: if you want to adjust headings */
     h1, h2, h3, h4, h5, h6 {
-        font-size: 1.3rem;  /* Adjust to make headings larger on mobile */
+        font-size: 2rem;  /* Adjust to make headings larger on mobile */
     }
 }
