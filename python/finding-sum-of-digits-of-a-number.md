@@ -1,6 +1,7 @@
 ---
 title: "Finding sum of digits of a number"
 layout: no-header
+back_link: /python
 ---
 Find the sum of digits of an input number<br>
 Method 1: Using **for** loop
