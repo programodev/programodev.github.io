@@ -33,7 +33,20 @@ This website is my digital home where I share everything I'm learning in coding,
     <div id="result"></div>
 </form>
 
+<script>
+const form = document.getElementById('form');
 
+form.addEventListener('submit', function(e) {
+
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+});
+</script>
 <script>
 const form = document.getElementById('form');
 const result = document.getElementById('result');
