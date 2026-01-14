@@ -27,9 +27,10 @@ This website is my digital home where I share everything I'm learning in coding,
   <label for="message">Message</label>
   <textarea id="message" name="message"
             placeholder="Your message" required></textarea>
+<div class="h-captcha" data-captcha="true"></div>
+
   <button type="submit">Send Message</button>
     <div id="result"></div>
-<div class="h-captcha" data-captcha="true"></div>
 </form>
 
 
