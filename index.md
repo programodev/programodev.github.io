@@ -29,7 +29,7 @@ This website is my digital home where I share everything I'm learning in coding,
             placeholder="Your message" required></textarea>
   <button type="submit">Send Message</button>
     <div id="result"></div>
-
+<div class="h-captcha" data-captcha="true"></div>
 </form>
 
 
