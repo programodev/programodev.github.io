@@ -30,56 +30,54 @@ This website is my digital home where I share everything I'm learning in coding,
 </form>
 
 <script>
-const form = document.getElementById('form');
+  const form = document.getElementById('form');
+  const result = document.getElementById('result');
 
-form.addEventListener('submit', function(e) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Always prevent default first
 
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-
-    if (!hCaptcha) {
-        e.preventDefault();
-        alert("Please fill out captcha field")
-        return
+    // hCaptcha check
+    const hCaptchaResponse = form.querySelector('textarea[name="h-captcha-response"]')?.value;
+    if (!hCaptchaResponse) {
+      result.innerHTML = "Please complete the captcha.";
+      result.style.display = "block";
+      return;
     }
-});
-</script>
-<script>
-const form = document.getElementById('form');
-const result = document.getElementById('result');
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-  result.innerHTML = "Please wait..."
+    // Prepare and send data
+    result.innerHTML = "Please wait...";
+    result.style.display = "block";
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
     fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                result.innerHTML = json.message;
-            } else {
-                console.log(response);
-                result.innerHTML = json.message;
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            form.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
-        });
-});
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+    .then(async (response) => {
+      const jsonResponse = await response.json();
+      if (response.status === 200) {
+        result.innerHTML = jsonResponse.message || "Message sent successfully!";
+      } else {
+        result.innerHTML = jsonResponse.message || "Something went wrong.";
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .finally(() => {
+      form.reset();
+      // Hide message after 3 seconds
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 3000);
+    });
+  });
 </script>
