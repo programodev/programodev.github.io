@@ -9,20 +9,26 @@ layout: null
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="/assets/css/contactus.css">
     <link rel="stylesheet" href="/assets/css/bottombar.css">
+    <!-- ADDED: Custom overrides (mobile font + sticky footer) -->
+    <link rel="stylesheet" href="/assets/css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body class="site-body">
     <section class="page-header">
       <h1 class="project-name">{{ site.title }}</h1>
       <h2 class="project-tagline">{{ site.description }}</h2>
     </section>
 
-    <section class="main-content">
-      {{ content }}
-    </section>
+    <!-- CHANGED: Wrapped main content so footer sticks to bottom -->
+    <main class="site-main">
+      <section class="main-content">
+        {{ content }}
+      </section>
+    </main>
     {% include bottom-bar.html %}
 
     {% include footer.html %}
     <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
+
