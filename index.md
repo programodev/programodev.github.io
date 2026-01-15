@@ -29,55 +29,87 @@ This website is my digital home where I share everything I'm learning in coding,
   <div id="result"></div>
 </form>
 
+<style>
+      #result {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#result.error {
+  color: #d32f2f;
+  background-color: #fdecea;
+  border: 1px solid #f5c2c7;
+}
+
+#result.success {
+  color: #2e7d32;
+  background-color: #edf7ed;
+  border: 1px solid #a5d6a7;
+}
+
+      </style>
+
 <script>
-  const form = document.getElementById('form');
-  const result = document.getElementById('result');
+const form = document.getElementById('form');
+const result = document.getElementById('result');
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Always prevent default first
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
 
-    // hCaptcha check
-    const hCaptchaResponse = form.querySelector('textarea[name="h-captcha-response"]')?.value;
-    if (!hCaptchaResponse) {
-      result.innerHTML = "<br><br>Please complete the captcha.";
-      result.style.display = "block";
-      return;
-    }
+  // hCaptcha check
+  const hCaptchaResponse = form.querySelector(
+    'textarea[name="h-captcha-response"]'
+  )?.value;
 
-    // Prepare and send data
-    result.innerHTML = "Please wait...";
+  if (!hCaptchaResponse) {
+    result.className = "error";
+    result.innerHTML = "Please complete the captcha.";
     result.style.display = "block";
+    return;
+  }
 
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+  // Preparing
+  result.className = "";
+  result.innerHTML = "Please wait...";
+  result.style.display = "block";
 
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: json
-    })
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: json
+  })
     .then(async (response) => {
       const jsonResponse = await response.json();
+
       if (response.status === 200) {
+        result.className = "success";
         result.innerHTML = jsonResponse.message || "Message sent successfully!";
       } else {
+        result.className = "error";
         result.innerHTML = jsonResponse.message || "Something went wrong.";
       }
     })
-    .catch(error => {
-      console.error(error);
+    .catch(() => {
+      result.className = "error";
       result.innerHTML = "Something went wrong!";
     })
     .finally(() => {
       form.reset();
-      // Hide message after 3 seconds
       setTimeout(() => {
         result.style.display = "none";
       }, 3000);
     });
-  });
+});
+
 </script>
