@@ -23,12 +23,10 @@ This website is my digital home where I share everything I'm learning in coding,
   <label for="email">Email</label>
   <input type="email" id="email" name="email" placeholder="Your email" required>
   <label for="message">Message</label>
-  <textarea id="message" name="message"
-            placeholder="Your message" required></textarea>
-<div class="h-captcha" data-captcha="true"></div>
-
+  <textarea id="message" name="message" placeholder="Your message" required></textarea>
+  <div class="h-captcha" data-captcha="true"></div>
   <button type="submit">Send Message</button>
-    <div id="result"></div>
+  <div id="result"></div>
 </form>
 
 <script>
