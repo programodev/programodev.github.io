@@ -39,7 +39,7 @@ This website is my digital home where I share everything I'm learning in coding,
     // hCaptcha check
     const hCaptchaResponse = form.querySelector('textarea[name="h-captcha-response"]')?.value;
     if (!hCaptchaResponse) {
-      result.innerHTML = "Please complete the captcha.";
+      result.innerHTML = "<br><br>Please complete the captcha.";
       result.style.display = "block";
       return;
     }
