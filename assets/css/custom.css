@@ -1,0 +1,52 @@
+/* ===============================
+   GLOBAL LAYOUT FIX (Sticky Footer)
+   =============================== */
+
+/* ADDED: Allow flexbox layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* ADDED: Main flex container */
+.site-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ADDED: Content expands to push footer down */
+.site-main {
+  flex: 1;
+}
+
+/* ===============================
+   MOBILE FONT FIX (Cayman override)
+   =============================== */
+
+@media (max-width: 768px) {
+
+  /* ADDED: Improve base readability */
+  body {
+    font-size: 16px;
+  }
+
+  /* ADDED: Fix tiny paragraph & list text */
+  p, li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* ADDED: Scale headings properly */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
