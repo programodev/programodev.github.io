@@ -12,9 +12,7 @@ This website is my digital home where I share everything I'm learning in coding,
 <form class="contact-form"
       action="https://api.web3forms.com/submit"
       method="POST" id="form">
-  <!-- Web3Forms Access Key -->
-  <input type="hidden" name="subject" value="New Submission from Web3Forms">
-  
+  <!-- Web3Forms Access Key -->  
   <input type="hidden" name="access_key" value="87b97c41-5288-4932-aa11-4d7a2aacbec7">
   <!-- Spam protection -->
   <input type="checkbox" name="botcheck" style="display:none;">
